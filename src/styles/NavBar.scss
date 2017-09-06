@@ -1,0 +1,38 @@
+.NavBar {
+  background-color: $color-primary;
+  padding: 30px 0 0;
+  box-shadow: 0 2px 2px gray;
+  .brand-name {
+    font-size: 36px;
+  }
+  a {
+    color: $font-color-light;
+    text-decoration: none;
+    margin: 0;
+    padding: 30px 10px;
+  }
+  .pull-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    a {
+      transition: 800ms;
+      &:hover {
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+    }
+  }
+  ul {
+    padding: 0;
+  }
+  .bottom-links {
+    margin-bottom: 0;
+    a {
+      padding-bottom: 0;
+    }
+  }
+  .active {
+    color: $color-secondary;
+  }
+}

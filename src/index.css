@@ -1,0 +1,64 @@
+.NavBar {
+  background-color: #F06C71;
+  padding: 30px 0 0;
+  box-shadow: 0 2px 2px gray; }
+  .NavBar .brand-name {
+    font-size: 36px; }
+  .NavBar a {
+    color: #EEE;
+    text-decoration: none;
+    margin: 0;
+    padding: 30px 10px; }
+  .NavBar .pull-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0; }
+    .NavBar .pull-right a {
+      transition: 800ms; }
+      .NavBar .pull-right a:hover {
+        background-color: rgba(255, 0, 0, 0.2); }
+  .NavBar ul {
+    padding: 0; }
+  .NavBar .bottom-links {
+    margin-bottom: 0; }
+    .NavBar .bottom-links a {
+      padding-bottom: 0; }
+  .NavBar .active {
+    color: navy; }
+
+.Result {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 5%;
+  flex-basis: 40%;
+  box-sizing: border-box; }
+  .Result h1 {
+    font-size: 22px; }
+  .Result h2 {
+    font-size: 18px; }
+  .Result figure {
+    margin: 0; }
+  .Result img {
+    width: 100%; }
+
+.Results {
+  display: flex;
+  flex-wrap: wrap; }
+
+.Shop .filter-section {
+  margin-left: 30px; }
+
+.Shop input {
+  margin-left: 20px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  position: relative; }

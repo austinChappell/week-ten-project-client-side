@@ -1,0 +1,23 @@
+$color-primary: #F06C71;
+$color-secondary: navy;
+$font-color-light: #EEE;
+
+@import './BaseLayout';
+@import './Home';
+@import './NavBar';
+@import './Result';
+@import './Results';
+@import './Shop';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  position: relative;
+}
