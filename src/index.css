@@ -1,14 +1,92 @@
+.About {
+  text-align: center; }
+  .About p {
+    width: 80%;
+    margin: 20px auto;
+    line-height: 1.35em;
+    font-size: 1.5em; }
+
+.Blog {
+  text-align: center; }
+
+.Cart {
+  display: flex;
+  flex-wrap: wrap; }
+
+.cart-page {
+  text-align: center; }
+
+.CartItems {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 5%;
+  flex-basis: 40%;
+  box-sizing: border-box; }
+  .CartItems h1 {
+    font-size: 22px; }
+  .CartItems h2 {
+    font-size: 18px; }
+  .CartItems figure {
+    margin: 0; }
+  .CartItems img {
+    width: 100%; }
+
+.EmptyCart {
+  width: 100%;
+  text-align: center; }
+
+.Contact {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+  .Contact input, .Contact textarea {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 5px;
+    resize: none;
+    border: 1px solid #9D4E0B;
+    border-radius: 3px; }
+  .Contact button {
+    border-radius: 3px;
+    border: 2px solid #9D4E0B;
+    background-color: transparent;
+    color: #9D4E0B;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer; }
+    .Contact button:hover {
+      background: #9D4E0B;
+      color: #FFFCE7; }
+
+.Home {
+  background-image: url("/images/landing-page.jpg");
+  background-size: cover;
+  top: 0;
+  position: absolute;
+  z-index: -10;
+  height: 100vh;
+  width: 100%; }
+  .Home .overlay {
+    height: 100vh;
+    background-color: rgba(157, 78, 11, 0.6); }
+
 .NavBar {
-  background-color: #F06C71;
-  padding: 30px 0 0;
-  box-shadow: 0 2px 2px gray; }
+  background-color: #9D4E0B;
+  padding: 10px 0 0;
+  box-shadow: 0 2px 2px #9D4E0B; }
+  .NavBar #brand-logo {
+    width: 100px; }
   .NavBar .brand-name {
     font-size: 36px; }
   .NavBar a {
-    color: #EEE;
+    color: #FFFDE7;
     text-decoration: none;
     margin: 0;
-    padding: 30px 10px; }
+    padding: 30px 10px;
+    cursor: pointer; }
   .NavBar .pull-right {
     position: absolute;
     right: 0;
@@ -17,18 +95,19 @@
     .NavBar .pull-right a {
       transition: 800ms; }
       .NavBar .pull-right a:hover {
-        background-color: rgba(255, 0, 0, 0.2); }
+        background-color: rgba(234, 125, 34, 0.5); }
   .NavBar ul {
     padding: 0; }
   .NavBar .bottom-links {
-    margin-bottom: 0; }
+    margin: 0; }
     .NavBar .bottom-links a {
       padding-bottom: 0; }
   .NavBar .active {
-    color: navy; }
+    color: orange; }
 
 .Result {
-  border: 3px solid black;
+  border: 1px solid #9D4E0B;
+  background-color: #FFFCE7;
   padding: 20px;
   margin: 5%;
   flex-basis: 40%;
@@ -41,6 +120,17 @@
     margin: 0; }
   .Result img {
     width: 100%; }
+  .Result button {
+    border: 2px solid #9D4E0B;
+    background-color: transparent;
+    color: #9D4E0B;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer; }
+    .Result button:hover {
+      background: #9D4E0B;
+      color: #FFFCE7; }
 
 .Results {
   display: flex;
@@ -55,7 +145,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: #57220A; }
 
 .container {
   margin: 0 auto;

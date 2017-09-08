@@ -1,6 +1,5 @@
-.Result {
-  border: 1px solid $color-primary;
-  background-color: $color-secondary;
+.CartItems {
+  border: 3px solid black;
   padding: 20px;
   margin: 5%;
   flex-basis: 40%;
@@ -17,7 +16,9 @@
   img {
     width: 100%;
   }
-  button {
-    @include button;
-  }
+}
+
+.EmptyCart {
+  width: 100%;
+  text-align: center;
 }

@@ -5,7 +5,8 @@ class Home extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="Home container">
+      <div className="Home">
+        <div className="overlay"></div>
       </div>
     )
   }

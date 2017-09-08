@@ -27,13 +27,7 @@ class Blog extends Component {
 
     let blogResults;
 
-    if (this.state.data.length > 0) {
-      blogResults = this.state.data.map((entry, index) => {
-        return <BlogEntry key={index} data={entry} />
-      });
-    } else {
-      blogResults = <h1>Blog Loading...</h1>
-    }
+    this.state.data.length > 0 ? blogResults = this.state.data.map((entry, index) => <BlogEntry key={index} data={entry} /> ) : blogResults = <h1>Blog Loading...</h1>;
 
     return (
       <div className="Blog">

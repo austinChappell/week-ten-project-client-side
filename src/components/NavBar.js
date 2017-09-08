@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import { connect } from 'react-redux';
+
 class NavBar extends Component {
-
-  constructor() {
-    super();
-
-    this.state = {}
-  }
 
   handleClick = (string) => {
     console.log('button clicked', string);
@@ -15,14 +11,22 @@ class NavBar extends Component {
   }
 
   render() {
+    let numOfItemsString;
+    this.props.numOfItems > 0 ? numOfItemsString = `(${this.props.numOfItems})` : numOfItemsString = '';
     return (
       <div className="NavBar">
         <div className="container">
-          <NavLink activeClassName="no-change" className="brand-name" exact to="/">The Drum Shop</NavLink>
+          <NavLink
+            activeClassName="no-change" 
+            className="brand-name"
+            exact
+            to="/">
+              <img id="brand-logo" src="../images/company-logo.png" alt="logo" />
+          </NavLink>
           <ul className="pull-right">
             <NavLink activeClassName="no-change" to="/about">About</NavLink>
             <NavLink activeClassName="no-change" to="/contact">Contact</NavLink>
-            <NavLink activeClassName="no-change" to="/cart">Cart</NavLink>
+            <NavLink activeClassName="no-change" to="/cart">Cart {numOfItemsString}</NavLink>
           </ul>
           <ul className="bottom-links">
             <NavLink activeClassName="active" to="/shop">Shop</NavLink>
@@ -34,4 +38,10 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+  return {
+    numOfItems: state.cartItems.length
+  }
+}
+
+export default connect(mapStateToProps)(NavBar);

@@ -1,7 +1,10 @@
 .NavBar {
   background-color: $color-primary;
-  padding: 30px 0 0;
-  box-shadow: 0 2px 2px gray;
+  padding: 10px 0 0;
+  box-shadow: 0 2px 2px $color-primary;
+  #brand-logo {
+    width: 100px;
+  }
   .brand-name {
     font-size: 36px;
   }
@@ -10,6 +13,7 @@
     text-decoration: none;
     margin: 0;
     padding: 30px 10px;
+    cursor: pointer;
   }
   .pull-right {
     position: absolute;
@@ -19,7 +23,7 @@
     a {
       transition: 800ms;
       &:hover {
-        background-color: rgba(255, 0, 0, 0.2);
+        background-color: rgba(234, 125, 34, 0.5);
       }
     }
   }
@@ -27,12 +31,12 @@
     padding: 0;
   }
   .bottom-links {
-    margin-bottom: 0;
+    margin: 0;
     a {
       padding-bottom: 0;
     }
   }
   .active {
-    color: $color-secondary;
+    color: orange;
   }
 }
